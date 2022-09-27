@@ -1,24 +1,21 @@
 import React from "react";
-import logo from "./logo.svg";
-import "./App.css";
+import styles from "./App.module.scss";
+
+import github from "./github.png";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={styles.app}>
+      <h2 className={styles.title}>
+        Template <span className={styles.react}>React</span> Repository
+      </h2>
+      <a
+        href={"https://github.com/Wordllban/react-template-project"}
+        className={styles.link}
+      >
+        <img src={github} width="25" height="25" className={styles.icon} />
+        Github
+      </a>
     </div>
   );
 }
