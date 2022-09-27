@@ -1,0 +1,57 @@
+@use "./assets/styles/colors.scss";
+
+.app {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  height: 100vh;
+}
+
+.title {
+  font-weight: 400;
+  font-size: 2.5rem;
+
+  cursor: pointer;
+  &:hover {
+    .react {
+      color: colors.$purple-pink;
+    }
+  }
+}
+
+.react {
+  transition: all 0.2s ease-in;
+}
+
+.icon {
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(279deg)
+    brightness(110%) contrast(106%);
+
+  margin-right: 0.5rem;
+
+  transition: all 0.15s ease-in;
+}
+
+.link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.5rem;
+
+  padding: 0.25rem;
+
+  transition: all 0.2s ease-in;
+  &:hover {
+    color: colors.$purple-pink;
+
+    .icon {
+      filter: invert(57%) sepia(88%) saturate(2659%) hue-rotate(234deg)
+        brightness(100%) contrast(97%);
+    }
+  }
+}
