@@ -24,15 +24,15 @@ $ npm install --global yarn
 >> `yarn start` - start app 
 
 ## Useful scripts
->> Run ESLint
+> Run ESLint
 ```
 yarn lint | yarn lint:fix - run ESLint
 ```
->> Run Pretiter 
+> Run Pretiter 
 ```
 yarn format
 ``` 
->> Run ESLint & Prettier
+> Run ESLint & Prettier
 ```
 yarn push-prepare
 ```
