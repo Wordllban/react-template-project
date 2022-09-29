@@ -18,3 +18,6 @@
 ```
 $ npm install --global yarn
 ```
+## Getting started with Yarn
+>> `yarn` - install dependencies 
+>> `yarn start` - start app 
