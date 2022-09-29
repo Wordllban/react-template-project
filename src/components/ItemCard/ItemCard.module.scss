@@ -1,0 +1,48 @@
+@use "../../assets/styles/colors.scss";
+
+.card {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0.5rem;
+
+  border: 1px colors.$background-light solid;
+}
+
+.image {
+  object-fit: scale-down;
+  width: 16rem;
+}
+
+.body {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  width: calc(100% - 2rem);
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 400;
+  margin-top: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.buy {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.price {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.cart {
+  cursor: pointer;
+  &:hover {
+    box-shadow: colors.$purple-shadow 0px 0px 10px;
+  }
+}

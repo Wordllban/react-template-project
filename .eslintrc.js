@@ -18,10 +18,32 @@ module.exports = {
   ],
 
   rules: {
+    "import/order": [
+      "error",
+      {
+        alphabetize: {
+          order: "asc",
+          /* sort in ascending order. Options: ['ignore', 'asc', 'desc'] */
+          caseInsensitive: true,
+          /* ignore case. Options: [true, false] */
+        },
+        groups: [
+          "external",
+          "builtin",
+          "index",
+          "sibling",
+          "parent",
+          "internal",
+          "object",
+        ],
+        "newlines-between": "always",
+      },
+    ],
     "react/prop-types": "off",
     "@typescript-eslint/no-unused-vars": "error",
     "@typescript-eslint/explicit-module-boundary-types": "off",
     "react/display-name": "off",
+    "storybook/default-exports": "off",
     "no-console": "warn",
     "no-debugger": "off",
   },
