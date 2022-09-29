@@ -1,11 +1,11 @@
-@use "./assets/styles/colors.scss";
-
-.container {
+.wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+}
 
-  margin-left: 6rem;
-  margin-right: 6rem;
+.catalog {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
 }

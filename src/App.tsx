@@ -1,22 +1,21 @@
-import React from "react";
+import React, { ReactElement } from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 import styles from "./App.module.scss";
+import { Header } from "./components";
+import { Cart, Catalog } from "./pages";
 
-import github from "./github.png";
-
-function App() {
+function App(): ReactElement {
   return (
-    <div className={styles.app}>
-      <h2 className={styles.title}>
-        Template <span className={styles.react}>React</span> Repository
-      </h2>
-      <a
-        href={"https://github.com/Wordllban/react-template-project"}
-        className={styles.link}
-      >
-        <img src={github} width="25" height="25" className={styles.icon} />
-        Github
-      </a>
-    </div>
+    <BrowserRouter>
+      <Header />
+      <div className={styles.container}>
+        <Routes>
+          <Route path="/" element={<Catalog />} />
+          <Route path="/cart" element={<Cart />} />
+        </Routes>
+      </div>
+    </BrowserRouter>
   );
 }
 

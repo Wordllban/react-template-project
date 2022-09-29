@@ -1,15 +1,11 @@
-import React, { useState, useEffect, ReactElement } from "react";
-import { useLocation } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
 
 import styles from "./Header.module.scss";
 
-interface HeaderProps {
-  content: ReactElement;
-}
-
-export const Header: React.FC<HeaderProps> = ({ content }) => {
+export const Header: React.FC = () => {
   const location = useLocation();
-  const [, setActivePage] = useState("/");
+  const [activePage, setActivePage] = useState("/");
 
   useEffect(() => {
     setActivePage(location.pathname);
@@ -19,12 +15,16 @@ export const Header: React.FC<HeaderProps> = ({ content }) => {
     <header className={styles.header}>
       <nav className={styles.wrapper}>
         <ul className={styles.nav}>
-          {content}
-          {/* <li className={activePage == "/currency-list" ? styles.active : ""}>
-            <Link to="/currency-list" className={styles.link}>
-              Example
+          <li className={activePage == "/" ? styles.active : ""}>
+            <Link to="/" className={styles.link}>
+              Catalog
             </Link>
-          </li> */}
+          </li>
+          <li className={activePage == "/cart" ? styles.active : ""}>
+            <Link to="/cart" className={styles.link}>
+              Cart
+            </Link>
+          </li>
         </ul>
       </nav>
     </header>
