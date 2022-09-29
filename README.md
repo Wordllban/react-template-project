@@ -22,3 +22,10 @@ $ npm install --global yarn
 >> `yarn` - install dependencies 
 >> 
 >> `yarn start` - start app 
+
+## Useful scripts
+>> `yarn lint` | `yarn lint:fix` - run ESLint
+>> 
+>> `yarn format` - run Pretiter 
+>>
+>> `yarn push-prepare` - run ESLint & Prettier
