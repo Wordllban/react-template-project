@@ -31,7 +31,7 @@ yarn start
 ## Useful scripts
 > ### Run ESLint
 ```
-yarn lint | yarn lint:fix - run ESLint
+yarn lint | yarn lint:fix
 ```
 > ### Run Pretiter 
 ```
