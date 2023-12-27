@@ -1,5 +1,9 @@
 # Template Repository for React app
 
+> Note: This template was created for students to take part in a workshop as part of a web development course at Lviv Polytechnic National University, Internet of Things programme. 
+
+---
+
 > ### Main technologies
 >> TypeScript
 >> 
